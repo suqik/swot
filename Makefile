@@ -17,7 +17,7 @@ else
 	MPICC       = mpicc
 endif
 
-CFLAGS      = -Iinclude # -use-asm # for old icc versions
+CFLAGS      = -Iinclude -fcommon # -use-asm # for old icc versions
 LDFLAGS     =  -lgsl -lgslcblas -lm -lcfitsio
 MPI_CFLAGS  =
 MPI_LFLAGS  =
